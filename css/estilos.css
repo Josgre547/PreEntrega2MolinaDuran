@@ -1,0 +1,283 @@
+/*GLOBALES*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size:62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*HEADER*/
+
+header{
+    background-color:grey;
+    height: 8rem;
+    position:sticky;
+    top: 0;
+    margin-bottom: 25px
+}
+
+header nav{
+    height: 100%;
+}
+
+.li_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.li_container li{
+    list-style: none;
+}
+
+.li_container li a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+/*main*/
+
+.bodyInicio {
+    background-image: url(../img/Fondo\ de\ la\ pagina.webp);
+    background-size: 50vw 100vh;
+    background-repeat: no-repeat;
+}
+
+h1{
+    margin-left: 20px;
+    font-size: 100px;
+}
+
+/* logo wp*/
+
+.logo_wp{
+    height: 8rem;
+    width: 8rem;
+    position: fixed;
+    top: 60rem;
+    left: 140rem;
+}
+
+.img_wp{
+    height: 100%;
+    width: 100%;
+}
+
+.body{
+    height: 100%;
+    width: 100%;
+}
+
+.bk_body{
+    height: 60rem;
+    width: 70rem;
+}
+
+.parrafo_container{
+    height: 1rem;
+    width: 50rem;
+    position: relative;
+    bottom: 50px;
+    left: 80rem;
+}
+
+p{
+    font-size: 25px
+}
+
+/* Formulario */
+.Formulario {
+    height: 50%;
+    width: 20rem;
+    position: relative;
+    top: 5rem;
+    left: 7.5rem;
+}
+
+.email{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.telefono{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.consulta{
+    display: flex;
+    height: 100%;
+    width: 200%;
+    margin-bottom: 5px;
+    font-size: 24px;
+    min-width: 300px;
+    max-height: 200px;
+    max-width: 300px;
+    min-height: 200px;
+}
+
+.enviar{
+    display:flex;
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 25px;
+}
+
+.mapa{
+    display: flex;
+    position: relative;
+    left: 75rem;
+    top: -400px;
+}
+
+/* Logos*/
+.li_logos{
+    display: flex;
+    justify-content: flex-end;
+}
+.li_logos li{
+    height: 5rem;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Sobre nosotros*/
+
+.sobrenosotros{
+    width: 110rem;
+    display: flex;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.sobre_nosotros_body{
+    background-image: url(../img/Background_SobreNosotros.webp)
+}
+
+/*FAQ*/
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 80%;
+	margin: auto;
+}
+
+.pregunta {
+	margin: 10px;
+	max-width: 500px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+.pregunta_encabezado h3 {
+	font-size: 1.5rem;
+	margin: 0;
+	cursor: pointer;
+}
+
+.respuesta {
+	height: 0;
+	opacity: 0;
+}
+
+.respuesta.activo {
+	height: auto;
+	opacity: 1;
+}
+
+/* Productos */
+
+.cards_container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   }
+   
+   .card-img {
+    background-color: #ffcaa6;
+    height: 40%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+   }
+   
+   .card-info {
+    padding-top: 10%;
+   }
+   
+   svg {
+    width: 20px;
+    height: 20px;
+   }
+   
+   .card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+   }
+   
+   .text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+   }
+   
+   /*Button*/
+   .card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+   }
+   
+   /*Hover*/
+   .card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+   }
+   
+   .card-button:hover {
+    border: 1px solid #ffcaa6;
+    background-color: #ffcaa6;
+   }
+   
+
+   .footer{
+    display: flex;
+    justify-content: flex-baseline;
+   }
+
+   .logos_footer{
+    height: 50px;
+    width: 50px;
+   }
