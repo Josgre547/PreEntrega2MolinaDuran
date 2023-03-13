@@ -6,32 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Driver's Tech</title>
 
+    <!-- bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!-- css main-->
-    <link rel="stylesheet" href="./css/estilos.css"
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>   
-    <Header>
-        <nav>
-            <ul class="li_container">
-                <section class="gridContainerHeader"> 
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pages/sobreNosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                    <li><a href="pages/productos.html">Productos</a></li>
-                    <li><a href="pages/faq.html">FAQ</a></li>
+    <Header class="barra_de_navegacion">
+        <nav class="row">
+            <ul class="row li_container">
+                <section class="row gridContainerHeader">
+                        <li class="col-xl-2.4 col-xs-12"><a href="index.html">Inicio</a></li>
+                        <li class="col-xl-2.4 col-xs-12"><a href="./pages/sobreNosotros.html">Sobre Nosotros</a></li>
+                        <li class="col-xl-2.4 col-xs-12"><a href="./pages/contacto.html">Contacto</a></li>
+                        <li class="col-xl-2.4 col-xs-12"><a href="./pages/productos.html">Productos</a></li>
+                        <li class="col-xl-2.4 col-xs-12"><a href="./pages/faq.html">FAQ</a></li>
                 </section>
             </ul>
         </nav>
     </Header>
 
-        <section class="gridContainerContenido">
+        <section class="container-md gridContainerContenido">
 
             <h1>Driver's Tech</h1>
 
-            <section class="gridContainerSideContenido">
+            <section class="row gridContainerSideContenido">
 
-                <section class="parrafoContainer">
+                <section class="col-md-12 parrafoContainer">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                         Voluptas iusto sit mollitia assumenda dicta voluptate esse. 
                         Eligendi perspiciatis corporis minus autem voluptatem animi 
@@ -39,7 +42,7 @@
                     </p>
                 </section>
 
-                <section class="imgContainer">
+                <section class="col-xl-6 col-xs-12 imgContainer">
                     <img src="img/Printed-Circuit-Board.jpg" alt="">
                 </section>
                 
@@ -49,5 +52,8 @@
         <div class="logo_wp"><img src="img/Whatsapp_logo.png" alt=""
             class="img_wp">
         </div>
+
+        <!--bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
