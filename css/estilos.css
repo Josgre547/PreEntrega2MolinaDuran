@@ -19,24 +19,25 @@ p{
     background-color: gray;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 40px;
     align-content: stretch;
     align-items: center;
 }
 
-.gridContainerHeader li a:hover{
+.gridContainerHeader div li a:hover{
+    display: flex;
+    justify-content: space-around;
     height: 100%;
     width: 100%;
     background-color: white;
 }
 
-.gridContainerHeader li a:active{
+.gridContainerHeader div li a:active{
     height: 100%;
     width: 100%;
     color: red;
 }
 
-.li_container li{
+.li_container div li{
     display: flex;
     list-style: none;
     justify-content: center;
