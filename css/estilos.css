@@ -15,41 +15,7 @@ p{
 }
 
 /*HEADER*/
-.gridContainerHeader{
-    background-color: gray;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-content: stretch;
-    align-items: center;
-}
 
-.gridContainerHeader div li a:hover{
-    display: flex;
-    justify-content: space-around;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-}
-
-.gridContainerHeader div li a:active{
-    height: 100%;
-    width: 100%;
-    color: red;
-}
-
-.li_container div li{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-}
-
-.li_container li a{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
-}
 
 /*main*/
 
@@ -65,7 +31,16 @@ p{
     background-repeat: no-repeat;
 }
 
+.tituloPrincipal{
+    display: flex;
+    align-items: center;
+}
+
 h1{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
     font-size: 7rem;
     grid-area: h1;
 }
@@ -90,10 +65,6 @@ h1{
 
 .imgContainer{
     grid-area: imagen;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
 }
 
 .imgContainer img{
@@ -126,50 +97,31 @@ h1{
     margin-top: 50px;
 }
 
-/* Formulario */
-.Formulario {
-    height: 50%;
-    width: 20rem;
-    position: relative;
-    top: 5rem;
-    left: 7.5rem;
-}
+/* Contacto */
 
-.email{
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-
-.telefono{
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-
-.consulta{
+.formulario div{
+    height: 25%;
     display: flex;
-    height: 100%;
-    width: 200%;
-    margin-bottom: 5px;
-    font-size: 24px;
-    min-width: 300px;
-    max-height: 200px;
-    max-width: 300px;
-    min-height: 200px;
+    justify-content: center;
 }
 
-.enviar{
-    display:flex;
-    margin-top: 20px;
-    margin-left: 100px;
-    font-size: 25px;
+.formulario div input{
+    height: 50%;
+    width: 50%;
+}
+
+.formulario div textarea{
+    height: 100%;
+    width: 50%;
 }
 
 .mapa{
     display: flex;
-    position: relative;
-    left: 75rem;
-    top: -400px;
+    justify-content: center;
 }
+
+
+
 
 /* Logos*/
 .li_logos{
@@ -220,10 +172,12 @@ h1{
 
 /* Productos */
 
-.cards_container{
+.cards_container article{
     display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
 }
 
 .card {
@@ -311,9 +265,9 @@ h1{
 .logo_wp{
     height: 8rem;
     width: 8rem;
-    position: sticky;
-    top: 60rem;
-    left: 140rem;
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
 }
 
 .img_wp{

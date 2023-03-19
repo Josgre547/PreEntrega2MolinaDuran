@@ -14,46 +14,76 @@
 </head>
 
 <body>   
-    <Header class="barra_de_navegacion">
-        <nav>
-            <ul class="container-fluid li_container">
-                <section class="container-fluid gridContainerHeader">
-                    <div class="row">
-                        <div><li><a class="col-xl-2 col-sm-12 text-center" href="index.html">Inicio</a></li></div>
-                        <div><li><a class="col-xl-2 col-sm-12 text-center" href="./pages/sobreNosotros.html">Sobre Nosotros</a></li></div>
-                        <div><li><a class="col-xl-2 col-sm-12 text-center" href="./pages/contacto.html">Contacto</a></li></div>
-                        <div><li><a class="col-xl-2 col-sm-12 text-center" href="./pages/productos.html">Productos</a></li></div>
-                        <div><li><a class="col-xl-2 col-sm-12 text-center" href="./pages/faq.html">FAQ</a></li></div>
-                    </div>
-                </section>
-            </ul>
-        </nav>
-    </Header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Driver's Tech</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/sobreNosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/faq.html">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
 
-        <section class="container-md gridContainerContenido">
+        <section class="container-md">
 
-            <h1>Driver's Tech</h1>
-
-            <section class="row gridContainerSideContenido">
-
-                <section class="col-md-12 parrafoContainer">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Voluptas iusto sit mollitia assumenda dicta voluptate esse. 
-                        Eligendi perspiciatis corporis minus autem voluptatem animi 
-                        repudiandae dolorem illum praesentium maxime, qui dolores.
-                    </p>
-                </section>
-
-                <section class="col-xl-6 col-xs-12 imgContainer">
-                    <img src="img/Printed-Circuit-Board.jpg" alt="">
-                </section>
+            <arcticle class="row">
                 
-            </section>
+                <div class="col-sm-12 col-lg-6 tituloPrincipal">
+                    <h1>Driver's Tech</h1>
+                </div>
+
+                <div class="col-sm-12 col-lg-6">
+
+                        <div class="col-sm-12 col-lg-6">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Voluptas iusto sit mollitia assumenda dicta voluptate esse. 
+                                Eligendi perspiciatis corporis minus autem voluptatem animi 
+                                repudiandae dolorem illum praesentium maxime, qui dolores.
+                            </p>
+                        </div>
+
+                        <div class="col-xl-12 col-xs-12 imgContainer">
+                            <img src="img/Printed-Circuit-Board.jpg" alt="">
+                        </div>
+                        
+                </div>
+
+            </arcticle>
 
         </section>
-        <div class="logo_wp"><img src="img/Whatsapp_logo.png" alt=""
-            class="img_wp">
+
+        <div class="logo_wp">
+            <img src="img/Whatsapp_logo.png" alt=""class="img_wp">
         </div>
+
+        <footer class="footer">
+            <section>
+                <ul class="li_logos">
+                    <li class="logos_footer"><img src="../img/Logofacebook_Contactos.webp" height="35" width="35"class="facebook"></li>
+                    <li class="logos_footer"><img src="../img/Logotwitter_Contacto.png" height="35" width="35" class="twitter"></li>
+                </ul>
+            </section>
+        </footer>
 
         <!--bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
